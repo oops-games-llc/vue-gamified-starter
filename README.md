@@ -1,5 +1,8 @@
 # Vue Gamified Auth Starter
 
+[English](README.md) | [Español](README-es.md) | [Français](README-fr.md) | [Deutsch](README-de.md) | [Português](README-pt.md) | [中文](README-zh.md)
+
+
 A premium, production-ready Vue 3 boilerplate featuring the best alternative to Google reCAPTCHA. Built for Vue and Vite developers who want to skip the setup and start building high-conversion authentication flows.
 
 ## Features
