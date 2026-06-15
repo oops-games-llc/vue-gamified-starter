@@ -9,6 +9,7 @@ const captchaVerified = ref(false);
 const loading = ref(false);
 const error = ref('');
 const gameUrl = ref('');
+const siteKey = ref(import.meta.env.VITE_CAPTCHA_SITE_KEY || 'demo_tenant');
 
 const SELECTED_GAMES = [
   "https://conversion.business/sunny-day-maze/",
@@ -102,7 +103,7 @@ const handleHumanVerified = (token) => {
           <p class="text-sm font-medium mb-2.5 text-foreground/80">Verification</p>
           <template v-if="gameUrl">
             <GamifiedCaptcha 
-              :siteKey="import.meta.env.VITE_CAPTCHA_SITE_KEY || 'demo_tenant'"
+              :siteKey="siteKey"
               :gameUrl="gameUrl"
               @humanVerified="handleHumanVerified"
             />
